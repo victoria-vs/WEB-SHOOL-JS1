@@ -1,12 +1,14 @@
 //  'Nikita' -> 'Hi, Nikita'
  const hiFunction = () => {
-    //code here
+    var name = 
+    console.log("Hi, " + name)
 }
-
-
+hiFunction()
 // 5, 6 -> 11
  const sum = () => {
-    //code here
+    var a=6
+    var b=6
+    console.log(a+b)
 }
 
 
@@ -14,18 +16,32 @@
 //0 -> true
 //4 -> true
  const isEven = () => {
-    //code here
+    var a = 4
+    if (a%2==0){
+        console.log(true)
+    }else{
+        console.log(false)
+    }
 }
 
 
 // 2 -> i have 2 apples
  const apples = () => {
-    //code here
+    var a=2
+    if (a==0){
+        console.log("i have no apples")
+    } else if (a==1){
+        console.log("i have "+a+"apple")
+    }else{
+        console.log("i have "+a+"apples")
+    }
+    
 }
 // 4 -> 16
  const getPower = () => {
-    //code here
-}
+     var a=4
+     console.log(a*a)
+ }
 
 module.exports = {
     hiFunction,
@@ -34,3 +50,4 @@ module.exports = {
     apples,
     getPower,
 }
+
